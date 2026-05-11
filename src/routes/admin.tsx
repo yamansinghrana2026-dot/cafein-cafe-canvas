@@ -399,7 +399,7 @@ function Section({ title, subtitle, action, children }: any) {
 function Loader() { return <div className="grid place-items-center py-12"><Loader2 className="w-5 h-5 animate-spin text-primary"/></div>; }
 function Empty({text}:{text:string}) { return <div className="glass rounded-2xl p-12 text-center text-muted-foreground text-sm">{text}</div>; }
 
-function Input({ value, onBlur, placeholder, className="" }: any) {
+function Input({ value, onBlur, placeholder, className="" }: { value: string; onBlur: (v: string)=>void; placeholder?: string; className?: string }) {
   const [v, setV] = useState(value ?? "");
   useEffect(()=>{setV(value ?? "");},[value]);
   return (
