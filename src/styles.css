@@ -143,6 +143,15 @@
   .animate-float { animation: float 6s ease-in-out infinite; }
   .animate-pulse-glow { animation: pulse-glow 2.5s ease-in-out infinite; }
   .animate-steam { animation: steam 4s ease-out infinite; }
+
+  .btn-primary {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    border-radius: 9999px; padding: 0.5rem 1.1rem;
+    background: var(--color-primary); color: var(--color-primary-foreground);
+    font-weight: 600; font-size: 0.875rem;
+    transition: transform 0.2s;
+  }
+  .btn-primary:hover { transform: scale(1.03); }
 }
 
 @font-face {
